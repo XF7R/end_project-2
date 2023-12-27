@@ -14,50 +14,43 @@ body{
     background-color: whitesmoke;
 }
 
-#nav-bar{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 120px;
-    padding-right: 120px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    height: 80px;
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    transition: 0.3s ease;
 }
 
-#nav-bar a{
-    text-decoration: none;
-    color: #3E366C;
-    font-weight: 500px;
-    font-size: 18px;
-    font-family: 'Baloo Bhaijaan 2', sans-serif;}
 
-#content-nav a {
-    color:#3E366C;
-    margin-left: 130px;
-    font-size: 18px;
-    text-decoration: none;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s;
-    z-index:1;
-    font-family: 'Baloo Bhaijaan 2', sans-serif;}
+nav a,
+li {
+    margin: 0 3%;
+    font-size: 130%;
+}
+.nav-link {
+    width: 135px;
+}
+.login {
+    width: 10%;
+}
 
-#content-nav a:hover{
-    border-bottom: 2px solid #54bbbd ;
-    -webkit-transition: all .1s;
-    -moz-transition: all .10s;
-    transition: all .10s;
-    z-index:1;
-    padding-bottom: 5px;    
+.login button {
+    width: 100%;
+    padding: 5% 0;
+    background: whitesmoke;
+    transition: 0.4s ease;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
-#content-nav a:hover::after{
-    transition: 0.5s;
-}
- #logo1{
-    height: 5vh; 
 
+.login button.scrolled {
+    color: white;
+    background: rgb(47, 171, 153);
 }
+
 section #im1 {
     width:450px;
     height: 550px;
@@ -72,7 +65,7 @@ section #im1 {
 form{ 
     border-radius: 30px; 
     width:450px;
-    height: 110vh;
+    height: 170vh;
     margin-top: 7vh;
     border: 1px solid #ffffff;
     background-color: white;
@@ -138,7 +131,6 @@ input[type=password]
 }
 
 h4{
-
     text-align: right;
     margin: 10px;
     font-family: 'Almarai', sans-serif;
@@ -148,4 +140,10 @@ h4{
 }
 
 
-  
+#buttonQ a{
+    text-decoration: none;
+    color: #4e3797;
+    font-size: 18px;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-weight: 800;
+}

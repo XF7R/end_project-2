@@ -19,91 +19,35 @@
   </head>
   <body dir="ltr">
     <!--nav start-->
-    <nav id="nav-bar">
-      <a href="/home-page/index.html">تسجيل دخول</a>
-
-      <div id="content-nav">
-        <a href="https://tuwaiq.edu.sa/">الرئيسية</a>
-        <a href="https://tuwaiq.edu.sa/bootcamps?type=NORMAL">المعسكرات</a>
-        <a href="https://tuwaiq.edu.sa/about">حول طويق </a>
-      </div>
-      <a href="https://tuwaiq.edu.sa/"
-        ><img
-          id="logo1"
-          src="/home-page/Tuwaiq_-removebg-preview.png"
-          alt="image"
-      /></a>
-    </nav>
+ 
     <!--nav end-->
 
     <section class="flexbox">
-      <img src="/home-page/background.webp" id="im1" />
+      <img src="./background.webp" id="im1" />
       <form>
         <h2>تسجيل الدخول</h2>
         <p>تسجيل الدخول الموحد لإنظمة اكاديمية طويق</p>
         <h4>رقم الهوية / الإقامة</h4>
-        <input type="text" placeholder="رقم الهوية / الإقامة" />
+        <input type="text" id="username" placeholder="رقم الهوية / الإقامة" />
         <br />
         <br />
         <h4>كلمة المرور</h4>
-        <input type="password" placeholder="كلمة المرور" />
-        <a href="../QR-page/index.html"><button id="buttonQ">تسجيل الدخول</button></a>
+        <input type="password" id="password" placeholder="كلمة المرور" />
+
+
+      <button id="buttonQ"><a href="../front.html">تسجيل دخول</a></button>
+<!-- 
+       <a href="../front.html"><button id="buttonQ">تسجيل الدخول</button></a> -->
+        <br>
+        <a href="/sgin-page/index.html">انشاء حساب</a>
       </form>
     </section>
-    <footer>
-      <div>
-        <h3>صمم في</h3>
-        <img src="/home-page/logo.png" alt="" />
-      </div>
-      <div>
-        <ul>
-          <li><a href="https://tuwaiq.edu.sa/"> الرئيسية </a></li>
-          <br />
-          <li>
-            <a href="https://tuwaiq.edu.sa/about">حول الأكادمية</a>
-          </li>
-          <br />
-          <br />
-          <li>
-            <a href="https://tuwaiq.edu.sa/privacy">سياسة الخصوصية</a>
-          </li>
-          <br />
-          <li>
-            <a href="https://tuwaiq.edu.sa/terms">الشروط والاحكام</a>
-          </li>
-          <br />
-        </ul>
-        <ul>
-          <li>
-            <i class="fa-brands fa-whatsapp"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-instagram"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-x-twitter"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-twitch"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-linkedin-in"></i>
-          </li>
-        </ul>
-        <p>@TuwaiqAcademy</p>
-      </div>
-      <div>
-        <img
-          src="/home-page/imges/f2-transformed-removebg-preview.png"
-          alt=""
-        />
-      </div>
-    </footer>
 
-    <script src="/Shared files/js/script.js"></script>
+
+    <!-- <script src="/Shared files/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+    </script> -->
   </body>
 </html>
